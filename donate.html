@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Iyewe Youth Forum</title>
+  <meta name="description" content="Support Iyewe Youth Forum — Donate to empower youths and women in business, education, and community health." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.png" alt="Iyewe Youth Forum Emblem" />
+        <span>IYEWE YOUTH FORUM</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">Vision &amp; Mission</a></li>
+        <li><a href="index.html#programs">Focus Areas</a></li>
+        <li><a href="index.html#leadership">Leadership</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="donate.html" style="color: var(--green); font-weight: 600;">Donate</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-eyebrow">Support Our Work</span>
+        <h1>Donate to Iyewe Youth Forum</h1>
+        <p>Your contribution directly supports youths and women in business, education, and community health.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="donate-grid">
+          <div class="donate-card">
+            <h3>Direct Bank Transfer</h3>
+            <p class="donate-intro">Send your support to our official forum account and confirm your details alongside.</p>
+
+            <div class="bank-box">
+              <div class="bank-row">
+                <span class="bank-label">Bank Name</span>
+                <span class="bank-value" id="bankName">Your Bank Name (Placeholder)</span>
+              </div>
+              <div class="bank-row">
+                <span class="bank-label">Account Name</span>
+                <span class="bank-value" id="accountName">Iyewe Youth Forum</span>
+              </div>
+              <div class="bank-row">
+                <span class="bank-label">Account Number</span>
+                <div class="acct-copy-wrap">
+                  <span class="bank-value acct-num" id="accountNumber">0000000000</span>
+                  <button type="button" class="copy-btn" id="copyAcctBtn">Copy</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="donate-note">
+              Need help with a transfer or sponsorship? Call <a href="tel:07034776408">07034776408</a>.
+            </p>
+          </div>
+
+          <div class="donate-card">
+            <h3>Confirm Your Support</h3>
+            <form id="donateForm">
+              <div class="form-group">
+                <label for="donateCause">Area to Support</label>
+                <select id="donateCause" name="cause">
+                  <option value="Business & Women Grants">Business &amp; Women Grants</option>
+                  <option value="Education & Mentorship">Education &amp; Mentorship</option>
+                  <option value="Health & Wellbeing">Health &amp; Wellbeing</option>
+                  <option value="General Community Support">General Community Support</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="donateAmount">Amount (Optional)</label>
+                <input type="text" id="donateAmount" name="amount" placeholder="e.g. ₦10,000" />
+              </div>
+
+              <div class="form-group">
+                <label>Donor Visibility</label>
+                <div class="visibility-options">
+                  <label class="radio-pill">
+                    <input type="radio" name="visibility" value="named" checked />
+                    <span>Show my name</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="visibility" value="anonymous" />
+                    <span>Keep me anonymous</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" id="donorNameGroup">
+                <label for="donateName">Your Name</label>
+                <input type="text" id="donateName" name="donorName" placeholder="Enter your name" required />
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Donation via WhatsApp</button>
+              <div class="form-status" id="donateStatus" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Iyewe Youth Forum Emblem" />
+        <span>IYEWE YOUTH FORUM</span>
+      </div>
+      <p class="footer-note">
+        No. 1 Ikaturu Eika Ohizenyi, Okehi LGA &bull; &copy; 2026 Iyewe Youth Forum
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

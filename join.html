@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us | Iyewe Youth Forum</title>
+  <meta name="description" content="Join Iyewe Youth Forum — Register as a member, volunteer, or apply for youth and women empowerment support." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.png" alt="Iyewe Youth Forum Emblem" />
+        <span>IYEWE YOUTH FORUM</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">Vision &amp; Mission</a></li>
+        <li><a href="index.html#programs">Focus Areas</a></li>
+        <li><a href="index.html#leadership">Leadership</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="join.html" style="color: var(--green); font-weight: 600;">Join Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-eyebrow">Get Involved</span>
+        <h1>Membership &amp; Support Application</h1>
+        <p>Register to join Iyewe Youth Forum, volunteer for community outreach, or apply for business and education support.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="join-wrap">
+          <div class="form-card">
+            <h3>Application Form</h3>
+            <form id="joinForm">
+              <div class="form-group">
+                <label for="joinType">Application Type</label>
+                <select id="joinType" name="joinType">
+                  <option value="Forum Membership">Forum Membership</option>
+                  <option value="Volunteer">Volunteer</option>
+                  <option value="Business / Education Support">Business / Education Support</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="joinName">Full Name</label>
+                <input type="text" id="joinName" name="joinName" placeholder="Enter your full name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="joinPhone">Phone Number</label>
+                <input type="tel" id="joinPhone" name="joinPhone" placeholder="e.g. 0803 000 0000" required />
+              </div>
+
+              <div class="form-group">
+                <label for="joinCommunity">Ward / Community</label>
+                <input type="text" id="joinCommunity" name="joinCommunity" placeholder="e.g. Ikaturu Eika Ohizenyi, Okehi LGA" required />
+              </div>
+
+              <div class="form-group">
+                <label for="joinNote">Short Note / Area of Interest</label>
+                <textarea id="joinNote" name="joinNote" rows="4" placeholder="Tell us briefly about your business, education goal, or how you would like to contribute" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application via WhatsApp</button>
+              <div class="form-status" id="joinStatus" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Iyewe Youth Forum Emblem" />
+        <span>IYEWE YOUTH FORUM</span>
+      </div>
+      <p class="footer-note">
+        No. 1 Ikaturu Eika Ohizenyi, Okehi LGA &bull; &copy; 2026 Iyewe Youth Forum
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
